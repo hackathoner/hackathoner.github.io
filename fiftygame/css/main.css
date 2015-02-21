@@ -17,7 +17,7 @@ body {
     position: absolute;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("/Users/Anuraag/Web Labs/50 States Game/bg.png");  
+    background-image: url("/fiftygame/bg.png");  
 }
 #questionBox{
     z-index: 10;
