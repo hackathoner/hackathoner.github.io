@@ -8,7 +8,7 @@ if(!localStorage.getItem("highscores")){
         var highscores = [0,0,0,0,0];
         localStorage.setItem("highscores",JSON.stringify(highscores));
 }
-var qnumber = 49;
+var qnumber = 1;
 var score = 0;
 var mynum = 5;
 var intervaled;
