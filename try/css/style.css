@@ -1195,7 +1195,18 @@
 			color: red;
 		}
 /* Grid Demo */
+/*	#scheduleID {
+		text-align: left;
+		margin-left: 12%;
+	}
+	@media (max-width: 980px) {
+		  #scheduleID{
+		     margin-left: auto;
+		    margin-right: auto;
+		    width: 100%;
 
+		  }
+	}*/	
 	.grid-demo {
 		display: block;
 		margin: 0 0 2em 0;
