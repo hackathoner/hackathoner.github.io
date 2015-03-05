@@ -1031,7 +1031,7 @@
 /* Banner */
 
 	#banner {
-		background-image: url("/Users/Anuraag/hackathoner.github.io/try/c3.png");
+		background-image: url("../c3.png");
 		background-position: center center;
 		background-size: cover;
 		color: #ffffff;
