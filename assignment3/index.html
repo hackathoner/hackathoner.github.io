@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>50 States Game</title>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+<meta id="Viewport" name="viewport" width="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+<script type="text/javascript">
+$(function(){
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+  var ww = ( $(window).width() < window.screen.width ) ? $(window).width() : window.screen.width; //get proper width
+  var mw = 480; // min width of site
+  var ratio =  ww / mw; //calculate ratio
+  if( ww < mw){ //smaller than minimum size
+   $('#Viewport').attr('content', 'initial-scale=' + ratio + ', maximum-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=yes, width=' + ww);
+  }else{ //regular size
+   $('#Viewport').attr('content', 'initial-scale=1.0, maximum-scale=2, minimum-scale=1.0, user-scalable=yes, width=' + ww);
+  }
+}
+});
+</script>
+    </head>
+    <body>
+        <div id="startView">
+            <h1>50 States Game!</h1>
+            <button id="start">Start Game</button>
+            <br>
+            <button id="help">How to Play</button>
+            <br>
+            <button id="highscores">Highscores</button>
+            <br>
+            <button id="social">Share!</button>
+        </div>
+        <div id="gameView">
+        </div>
+        <div id="questionBox">
+                <h2 id="mscore">Score: 0</h2>
+                <h1 id="title" style="text-align:center">Capital of Anuraaag</h1>
+<!--                <form action=none>-->
+<!--            <form action="go">-->
+                    <input style="width:100%;padding:2%; border-radius:10px; border-color:transparent" id="ans" type="text" name="answer" value="">
+                    <br>
+                    <input id="button" type="submit"> 
+                    <span id="dummy"></span>
+                    <br>
+<!--                    <input type="submit" id="submit" name="submitButton">-->
+<!--                </form>-->
+<!--            </form>-->
+            </div>
+    </body>
+</html>
