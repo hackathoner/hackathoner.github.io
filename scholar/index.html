@@ -20,19 +20,49 @@
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
 		</noscript>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+    // hide #back-top first 
+    $("#back-top").hide(); 
+    // fade in #back-top 
+    $(function () { 
+        $(window).scroll(function () { 
+            if ($(this).scrollTop() > 100) {$('#back-top').fadeIn();} else {$('#back-top').fadeOut();} 
+        }); 
+        // scroll body to 0px on click 
+        $('#back-top a').click(function (e) { 
+            e.preventDefault(); 
+            $('body,html').animate({ 
+                scrollTop: 0 
+            }, 800,function(){$("#back-bottom").show();}); 
+            return false; 
+        }); 
+        $("#back-bottom a").click(function(e){ 
+            e.preventDefault(); 
+            var currentElem = $(this); 
+            var scrollTopPos = $("div#topwrapper")[0].offsetHeight; 
+            $('body,html').animate({ 
+                scrollTop: scrollTopPos 
+            }, 800,function(){$(currentElem).parent().hide();}); 
+            return false; 
+        }); 
+    }); 
+}); 
+</script>
 	</head>
 	<body class="landing">
-
+        <p id="back-top"><a href="#top" class="" title="BackToTop"><span></span></a></p>
 		<!-- Header -->
 			<header id="header" class="alt">
                 <h1 style="font-size:0.85em"><strong><a href="index.html">Code Scholarship</a></strong></h1>
 				<nav id="nav" style="font-size:0.85em">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="#one">About</a></li>
-						<li><a href="#three">Process</a></li>
-						<li><a href="#two">Partners</a></li>
-						<li><a href="index.html">Contact</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#process">Process</a></li>
+						<li><a href="#partners">Partners</a></li>
+						<li><a href="#contact">Contact</a></li>
 <!--
 						<li><a href="generic.html">Generic</a></li>
 						<li><a href="elements.html">Elements</a></li>
@@ -51,7 +81,7 @@
 			</section>
 
 			<!-- One -->
-				<section id="one" class="wrapper style1">
+				<section id="about" class="wrapper style1">
 					<div class="container 75%">
 						<div class="row 200%">
 							<div class="6u 12u$(medium)">
@@ -68,7 +98,7 @@
 					</div>
 				</section>
             <!-- Three -->
-				<section id="three" style="background-color:#F6F6F6" class="wrapper style1">
+				<section id="process" style="background-color:#F6F6F6" class="wrapper style1">
 					<div class="container">
 						<header class="major special">
 							<h2>Application Process</h2>
@@ -119,7 +149,7 @@
 				</section>
 
 			<!-- Two -->
-				<section id="two" style="background-color:white"class="wrapper style2 special">
+				<section id="partners" style="background-color:white"class="wrapper style2 special">
 					<div class="container">
 						<header class="major">
 							<h2>Partners</h2>
@@ -145,7 +175,7 @@
 
 			
 			<!-- Four -->
-				<section id="four" class="wrapper style3 special">
+				<section id="contact" class="wrapper style3 special">
 					<div class="container">
 						<header class="major">
 							<h2>Contact</h2>
