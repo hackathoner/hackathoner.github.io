@@ -1054,7 +1054,8 @@
 	#banner {
 		padding: 16em 0 13em 0;
 		background-attachment: fixed;
-		background-image: url("images/pic.png"), url("../images/banner.jpg");
+        background-color: #313E49;
+		background-image: url("images/pic.png");
 		background-position: center top;
 		background-size: cover;
 		line-height: 1.75;
@@ -1208,8 +1209,8 @@
     color:#446cb3; 
     opacity:.8; 
     filter:alpha(opacity=80); 
-    width:80px; 
-    height:80px;
+    width:50px; 
+    height:60px;
     margin-right: 3%;
     z-index:99999; 
 } 
@@ -1235,7 +1236,7 @@
     font-weight:400; 
     text-align:center; 
     position:absolute; 
-    top:50%; 
+    top:35%; 
     font-size:32px; 
     line-height:32px; 
     width:32px; 
