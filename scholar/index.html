@@ -24,7 +24,9 @@
 <script type="text/javascript"> 
 $(document).ready(function(){ 
     // hide #back-top first 
-    $(function() {
+   
+
+    
         $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
                 var target = $(this.hash);
@@ -37,7 +39,7 @@ $(document).ready(function(){
                 }
             }
         });
-    });
+    
     $("#back-top").hide(); 
     // fade in #back-top 
     $(function () { 
@@ -90,10 +92,9 @@ $(document).ready(function(){
 				<h2 style="font-size:40px">Code Scholarship</h2>
 				<p style="color:white;">A scholarship to help Women and Underrepresented Minorities explore their passion for technology</p>
 				<ul class="actions">
-					<li><a href="apply.html" class="button special big">Apply Today!</a></li>
+					<li><a href="#go" id="click" class="button special big">Apply Today!</a></li>
 				</ul>
 			</section>
-
 			<!-- One -->
 				<section id="about" class="wrapper style1">
 					<div class="container 75%">

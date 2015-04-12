@@ -69,3 +69,6 @@
 		#footer .icons {
 			font-size: 1em;
 		}
+
+
+.dialogbox{width:100px; height:100px; background:grey;display:none}
